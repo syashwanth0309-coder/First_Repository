@@ -20,4 +20,6 @@ def home(request):
                 result = num1/num2
             else:
                 result = "Error: Division by zero"
+        elif operation == 'percentage':
+            result = (num1/100) * num2
     return render(request, 'calculator/home.html', {'result': result})
